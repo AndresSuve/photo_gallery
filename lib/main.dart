@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart'; // Импортируем Firebase Core
+import 'package:firebase_core/firebase_core.dart'; 
 
-import 'screens/photo_gallery_screen.dart'; // Импортируем ваш экран галереи фотографий
+import 'screens/photo_gallery_screen.dart'; 
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); // Обеспечиваем инициализацию виджетов Flutter
-  await Firebase.initializeApp(); // Инициализируем Firebase
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
-  runApp(MyApp()); // Запускаем ваше приложение
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PhotoGalleryScreen(), // Устанавливаем ваш экран галереи фотографий как главный
+      home: PhotoGalleryScreen(),
     );
   }
 }
